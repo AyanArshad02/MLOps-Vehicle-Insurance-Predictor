@@ -27,12 +27,12 @@ class VehicleDataExtract():
 
     def __init__(self) -> None:
         """
-        Initializes the NetworkDataExtract class.
+        Initializes the VehicleDataExtract class.
 
         Handles any initialization requirements. Currently, it does not initialize any instance variables.
         
         Raises:
-            NetworkSecurityException: If an error occurs during initialization.
+            MyException: If an error occurs during initialization.
         """
         try:
             pass
@@ -50,7 +50,7 @@ class VehicleDataExtract():
             list: A list of JSON records extracted from the CSV file.
 
         Raises:
-            NetworkSecurityException: If an error occurs while reading or transforming the CSV file.
+            MyException: If an error occurs while reading or transforming the CSV file.
         """
         try:
             data = pd.read_csv(file_path)
@@ -75,7 +75,7 @@ class VehicleDataExtract():
             int: The number of records successfully inserted.
 
         Raises:
-            NetworkSecurityException: If an error occurs while interacting with the MongoDB database.
+            MyException: If an error occurs while interacting with the MongoDB database.
         """
         try:
             self.database=database
