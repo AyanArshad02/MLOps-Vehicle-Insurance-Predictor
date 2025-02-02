@@ -85,13 +85,13 @@ class SimpleMissingValuesAnalysis(MissingValuesAnalysisTemplate):
         plt.show()
 
 
-# Example usage
-if __name__ == "__main__":
-    # Example usage of the SimpleMissingValuesAnalysis class.
+# # Example usage
+# if __name__ == "__main__":
+#     # Example usage of the SimpleMissingValuesAnalysis class.
 
-    # Load the data
-    df = pd.read_csv('notebook/data.csv')
+#     # Load the data
+#     df = pd.read_csv('notebook/data.csv')
 
-    # Perform Missing Values Analysis
-    missing_values_analyzer = SimpleMissingValuesAnalysis()
-    missing_values_analyzer.analyze(df)
+#     # Perform Missing Values Analysis
+#     missing_values_analyzer = SimpleMissingValuesAnalysis()
+#     missing_values_analyzer.analyze(df)
