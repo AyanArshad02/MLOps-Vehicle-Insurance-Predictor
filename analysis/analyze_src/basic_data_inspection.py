@@ -167,29 +167,29 @@ class DataInspector:
         self._strategy.inspect(df)
 
 
-# Example usage
-if __name__ == "__main__":
-    # Example usage of the DataInspector with different strategies.
+# # Example usage
+# if __name__ == "__main__":
+#     # Example usage of the DataInspector with different strategies.
 
-    # Load the data
-    df = pd.read_csv('notebook/data.csv')
+#     # Load the data
+#     df = pd.read_csv('notebook/data.csv')
 
-    # Initialize the Data Inspector with a specific strategy
-    inspector = DataInspector(DataTypesInspectionStrategy())
-    inspector.execute_inspection(df)
+#     # Initialize the Data Inspector with a specific strategy
+#     inspector = DataInspector(DataTypesInspectionStrategy())
+#     inspector.execute_inspection(df)
 
-    # Change strategy to Summary Statistics and execute
-    inspector.set_strategy(SummaryStatisticsInspectionStrategy())
-    inspector.execute_inspection(df)
+#     # Change strategy to Summary Statistics and execute
+#     inspector.set_strategy(SummaryStatisticsInspectionStrategy())
+#     inspector.execute_inspection(df)
 
-    # Change strategy to Duplicate Rows
-    inspector.set_strategy(DuplicateRowsInspectionStrategy())
-    inspector.execute_inspection(df)
+#     # Change strategy to Duplicate Rows
+#     inspector.set_strategy(DuplicateRowsInspectionStrategy())
+#     inspector.execute_inspection(df)
 
-    # Change strategy to Outlier Detection
-    inspector.set_strategy(OutlierDetectionStrategy())
-    inspector.execute_inspection(df)
+#     # Change strategy to Outlier Detection
+#     inspector.set_strategy(OutlierDetectionStrategy())
+#     inspector.execute_inspection(df)
 
-    # Change strategy to Unique Values Inspection
-    inspector.set_strategy(UniqueValuesInspectionStrategy())
-    inspector.execute_inspection(df)
+#     # Change strategy to Unique Values Inspection
+#     inspector.set_strategy(UniqueValuesInspectionStrategy())
+#     inspector.execute_inspection(df)
