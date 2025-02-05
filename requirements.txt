@@ -18,26 +18,4 @@ python-multipart
 uvicorn
 jinja2
 imblearn
-python-dotenv
-
-ipykernel
-pandas
-numpy
-matplotlib
-plotly
-seaborn
-scikit-learn
-pymongo
-from_root
-dill
-certifi
-PyYAML
-boto3
-mypy-boto3-s3
-botocore
-fastapi
-python-multipart
-uvicorn
-jinja2
-imblearn
 -e .
