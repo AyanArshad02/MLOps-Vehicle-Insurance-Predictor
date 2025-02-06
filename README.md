@@ -91,7 +91,11 @@ In this project, we predict whether a vehicle is likely to purchase insurance ba
 ## Project Structure
 
 - `app.py`: FastAPI app that exposes the model for prediction and triggers training.
-- `src/constants.py`: Configuration constants such as host and port for the app.
+- `analysis`: Contains EDA using modular coding, used different types of design patterns
+- `config`: Contains schema.yaml file for Data Validation.
+- `src/components`: Contains data_ingestion.py, data_transformation.py, data_validation.py, model_evaluation.py, model_pusher.py and model_trainer.py
+- `src/configuration`: configuration for aws and mongodb
+- `src/constants.py`: Configuration constants such as host and port for the app and other constans which is used in the project.
 - `src/pipeline`: Contains data preprocessing, model training, and prediction pipeline.
 - `templates`: HTML templates for rendering the user interface.
 - `static`: Static files like CSS for the frontend interface.
