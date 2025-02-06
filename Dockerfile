@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the dependencies
+RUN pip install --no-cache-dir python-dotenv
 RUN pip install -r requirements.txt
 
 # Expose the port FastAPI will run on

@@ -18,4 +18,5 @@ python-multipart
 uvicorn
 jinja2
 imblearn
+python-dotenv
 -e .
