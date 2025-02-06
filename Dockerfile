@@ -9,7 +9,7 @@ COPY . /app
 
 # Install the dependencies
 RUN pip install --no-cache-dir python-dotenv
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt 
 
 # Expose the port FastAPI will run on
 EXPOSE 8000
